@@ -330,3 +330,8 @@ html[data-liberado] .selo { border-color: rgba(255, 157, 132, 0.5); }
 .ig-parado:active .ig-abrir { transform: translate(-50%, -50%) scale(0.96); }
 @media (hover: hover) { .ig-parado:hover img { transform: scale(1.03); } .ig-parado:hover .ig-abrir { background: rgba(12, 11, 10, 0.92); } }
 .video-caixa .ig-link .ico { color: var(--texto-3); }
+/* receita em vídeo: no celular o vídeo vem primeiro e a receita logo abaixo; no computador, lado a lado (vídeo à direita) */
+.rec-grade-video .rec-video { padding-top: 6px; }
+.rec-grade-video .rec-video-cheio, .rec-grade-video .video-caixa { margin: 0 auto; }
+@media (max-width: 899px) { .rec-grade-video .video-caixa { max-width: 420px; margin: 0 auto; } }
+@media (min-width: 900px) { .rec-grade-video .rec-video { order: 2; } .rec-grade-video .rec-texto { order: 1; } }

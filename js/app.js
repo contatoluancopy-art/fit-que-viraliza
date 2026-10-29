@@ -502,10 +502,10 @@
       </header>
       <div class="pagina-corpo rec-corpo">
         ${meta ? `<div class="chips">${meta}</div>` : ''}
-        <div class="pagina-acoes">${rr ? botao('principal', 'play-fill', t('Ver o vídeo', 'Ver el video'), 'ver-video') : ''}${botaoFav(e.chave)}</div>
-        <div class="rec-grade">
+        <div class="pagina-acoes">${botaoFav(e.chave)}</div>
+        <div class="rec-grade rec-grade-video">
+          <aside class="rec-video" id="rec-video">${videoOuCapa(e, r0)}</aside>
           ${texto}
-          <aside class="rec-video" id="rec-video"><h3>${ico('play-circle')}${t('O vídeo', 'El video')}</h3>${videoOuCapa(e, r0)}</aside>
         </div>
       </div>`;
   }
